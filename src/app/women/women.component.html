@@ -1,0 +1,18 @@
+<div class="maindiv" *ngFor="let topWomen of topsWomen">
+  <br>
+  <div class="product">
+    <img  class="Image" [src]="topWomen.imageUrl" alt="Product Image">
+    <br>
+    <h3 class="h3">{{ topWomen.id }}</h3>
+    <p> {{topWomen.size}}</p>
+    <p><span class="price">Price:</span>  ${{ topWomen.price }}</p>
+
+    <!-- Display the "Add to Bag" button and "Out of Stock" message based on stock status -->
+    <button (click)="addToBag(topWomen)" class="ToBag" [disabled]="!serviceService.isInStock(topWomen)">
+      Add to Bag
+    </button>
+    <br>
+    <p class="outofstock" *ngIf="!serviceService.isInStock(topWomen)">Out of Stock</p>
+    <br>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: whitesmoke;
+
+}
+.Image{
+    width: 700px;
+    height: 800px ;
+    
+}
+.product{
+    border: 5px solid black;
+    padding: 10px;
+    font-size: 16px;
+    background-color:#d7d9cc;
+}
+.h3{
+    font-family: cooper;
+    font-size: 22px;
+}
+.price{
+    font-family: cooper;
+}
+.outofstock{
+    font-family: cooper;
+}
+.ToBag{
+    background-color: #ffffff;
+    color: #000000; /* צבע טקסט */
+    padding: 10px 20px; /* מרווחים פנים */
+    font-size: 16px;
+    border-radius: 5px;
+}
+.ToBag:hover{
+    background-color: #000000; /* צבע רקע בהעברת העכבר */
+    color: #ffffff; /* צבע טקסט בהעברת העכבר */
+}

@@ -1,0 +1,32 @@
+.list {
+    font-size: 25px;
+    padding: 13px;
+    background-color: #d7d9cc;
+    text-align: center;
+    display:flex ;
+    align-items: center;
+}
+
+.listLink {
+    text-decoration: none;
+    padding: 16px;
+    color: black;
+}
+
+    .listLink:hover {
+        background-color: #e9ebdf;
+        border-bottom: 3px solid black;
+    }
+    img{
+        width: 50px;
+        height: 40px;
+        
+    }
+    .bag{
+        margin-left: 1100px;
+        display:flex ;
+        align-items: center;
+        
+
+
+    }
