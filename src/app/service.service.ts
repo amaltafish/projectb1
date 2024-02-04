@@ -11,10 +11,7 @@ export class ServiceService {
   addToBag(product: any): void {
     if (product.inStock) {
       this.itemCount++;
-    } else {
-      console.log('Out of stock');
-      // You can add additional logic or messages here if needed
-    }
+    } 
   }
 
  
@@ -29,4 +26,8 @@ export class ServiceService {
     // Check if the product is in stock
     return product.inStock;
   }
+  getOutOfStockMessage(): string {
+    return 'Out of Stock';
+  }
 }
+

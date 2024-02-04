@@ -13,7 +13,7 @@
      Add to Bag
    </button>
    <br>
-   <p class="outofstock" *ngIf="!serviceService.isInStock(topMen)">Out of Stock</p>
+   <p class="outofstock" *ngIf="!serviceService.isInStock(topMen)">{{ serviceService.getOutOfStockMessage() }}</p>
    <br>
  </div>
 </div>
