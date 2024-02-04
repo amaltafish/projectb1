@@ -5,12 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServiceService {
-  private bag: any[] = [];
+ 
   private itemCount: number = 0;
 
   addToBag(product: any): void {
     if (product.inStock) {
-      this.bag.push(product);
       this.itemCount++;
     } else {
       console.log('Out of stock');
@@ -18,9 +17,7 @@ export class ServiceService {
     }
   }
 
-  getBag(): any[] {
-    return [...this.bag];
-  }
+ 
 
   getItemCount(): number {
     return this.itemCount;
